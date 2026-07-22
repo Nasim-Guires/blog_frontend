@@ -21,7 +21,7 @@ function BlogCard({ blog }) {
         {/* Top Image Banner */}
         <div className="relative w-full h-48 sm:h-52 bg-slate-100 overflow-hidden shrink-0">
           <img
-            src={blog.image_path || blog.image || defaultImage}
+            src={blog.imagePath || blog.image || defaultImage}
             alt={blog.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
             onError={(e) => {
